@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/untitled.dir/english_version.c.o"
+  "CMakeFiles/untitled.dir/english_version.c.o.d"
   "CMakeFiles/untitled.dir/main.c.o"
   "CMakeFiles/untitled.dir/main.c.o.d"
   "untitled"

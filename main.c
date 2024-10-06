@@ -2,39 +2,39 @@
 
 int main()
 {
-    int bilinc, kanama, agri, yas, puan=10;
-    printf("Bilinci yerinde mi? (0 hayir, 1 evet): ");
-    scanf("%d", &bilinc);
+    int consciousness, bleeding, pain, age, score=10;
+    printf("Is the patient conscious? (0 no, 1 yes): ");
+    scanf("%d", &consciousness);
 
-    if (bilinc==0){
-        printf("Acil Müdahele!\n");
+    if (consciousness == 0){
+        printf("Emergency Intervention!\n");
         return 0;}
 
-    printf("Kanamasi var mi? (0 yok, 1 az, 2 cok): ");
-    scanf("%d", &kanama);
-    printf("Agrisi var mi? (0 yok, 1 az, 2 cok): ");
-    scanf("%d", &agri);
-    printf("Hasta yasi: ");
-    scanf("%d", &yas);
+    printf("Is there bleeding? (0 none, 1 little, 2 a lot): ");
+    scanf("%d", &bleeding);
+    printf("Is there pain? (0 none, 1 little, 2 a lot): ");
+    scanf("%d", &pain);
+    printf("Patient's age: ");
+    scanf("%d", &age);
 
-    if(kanama==2 || agri ==2 && yas>=65)
+    if(bleeding == 2 || (pain == 2 && age >= 65))
     {
-        puan += 40;
-        printf("Kirmizi alan, Hasta aciliyet skoru: %d",puan);
+        score += 40;
+        printf("Red zone, Patient urgency score: %d", score);
     }
-    else if (kanama==1 || agri ==2)
+    else if (bleeding == 1 || pain == 2)
     {
-        puan += 20;
-        printf("Sari alan, Hasta aciliyet skoru: %d",puan);
+        score += 20;
+        printf("Yellow zone, Patient urgency score: %d", score);
     }
-    else if (kanama==1 || agri ==1)
+    else if (bleeding == 1 || pain == 1)
     {
-        puan += 10;
-        printf("Yeşil alan, Hasta aciliyet skoru: %d",puan);
+        score += 10;
+        printf("Green zone, Patient urgency score: %d", score);
     }
     else
     {
-        printf("Nasil yardimci olabilirim?");
+        printf("How can I assist?");
     }
     return 0;
 }

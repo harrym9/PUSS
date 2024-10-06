@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/harrym9/CLionProjects/PUSS/english_version.c" "CMakeFiles/untitled.dir/english_version.c.o" "gcc" "CMakeFiles/untitled.dir/english_version.c.o.d"
   "/home/harrym9/CLionProjects/PUSS/main.c" "CMakeFiles/untitled.dir/main.c.o" "gcc" "CMakeFiles/untitled.dir/main.c.o.d"
   )
 

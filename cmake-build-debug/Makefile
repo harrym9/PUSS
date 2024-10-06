@@ -129,6 +129,30 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
+english_version.o: english_version.c.o
+.PHONY : english_version.o
+
+# target to build an object file
+english_version.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/english_version.c.o
+.PHONY : english_version.c.o
+
+english_version.i: english_version.c.i
+.PHONY : english_version.i
+
+# target to preprocess a source file
+english_version.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/english_version.c.i
+.PHONY : english_version.c.i
+
+english_version.s: english_version.c.s
+.PHONY : english_version.s
+
+# target to generate assembly for a file
+english_version.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/english_version.c.s
+.PHONY : english_version.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled"
+	@echo "... english_version.o"
+	@echo "... english_version.i"
+	@echo "... english_version.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
